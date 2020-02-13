@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Install Wordpress:
+wget https://wordpress.org/latest.tar.gz
+tar -xzf latest.tar.gz
+cp -r wordpress/* /var/www/html/
+
+# Bootstrap Wordpress:
 yum update -y
 yum -y install httpd mysql
 amazon-linux-extras install epel -y
