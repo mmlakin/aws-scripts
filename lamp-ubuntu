@@ -1,0 +1,8 @@
+#!/bin/bash
+# Add sudo in front of each command if pasting into a shell interactively
+# e.g. sudo apt --yes update
+
+apt --yes update
+apt --yes install apache2
+apt --yes install mysql-server
+apt --yes install php libapache2-mod-php php-mysql
